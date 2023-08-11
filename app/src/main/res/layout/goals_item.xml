@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_bg"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/white_backgroud"
+
+        >
+        <ImageView
+            android:layout_width="@dimen/dp20"
+            android:layout_height="@dimen/dp20"
+            android:background="@drawable/clock_ic"
+            app:layout_constraintEnd_toStartOf="@+id/date_tv"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginEnd="@dimen/dp4"
+
+            />
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/dp8"
+            android:textColor="@color/subtexttextcolor"
+            android:text="03/27"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/category_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp8"
+            android:textColor="@color/orangebg"
+            android:text="VIDEO"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:paddingStart="@dimen/dp2"
+            android:paddingEnd="@dimen/dp2"
+            android:background="@drawable/light_orange_new"
+            />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="$5,509 "
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/category_tv"
+            android:layout_margin="@dimen/dp16"
+            app:layout_constraintEnd_toEndOf="parent"
+
+
+            />
+
+        <TextView
+            android:id="@+id/tv_sbtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            android:textColor="@color/black"
+            android:text="Balance"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="12sp"
+            android:layout_marginTop="@dimen/dp4"
+            android:layout_marginStart="@dimen/dp16"
+            android:layout_marginEnd="@dimen/dp16"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
